@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio - Jaime Jiménez</title>
+    <meta
+      name="description"
+      content="Portafolio de Jaime Jiménez - Desarrollador Web Frontend"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="logo" href="#">Jaime</a>
+        <nav class="nav">
+          <a href="#about">Sobre mí</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-left">
+          <h1>Hola, soy <span class="gradient-text">Jaime</span></h1>
+          <p class="lead">
+            Desarrollador Full Stack / Angular • SpringBoot • MySql
+          </p>
+          <ul style="list-style: none">
+            <li>Autodidacta</li>
+            <li>Creatividad y pensamiento crítico</li>
+            <li>Resolución de problemas</li>
+            <li>Trabajo en equipo y comunicación efectiva</li>
+          </ul>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Ver proyectos</a>
+            <a class="btn outline" href="#contact">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="avatar">JJ</div>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un desarrollador Junior además de creativo, exigente,
+          perfeccionista y organizado con ganas de aprender y desarrollarme como
+          programador, trabajar en proyectos profesionales y con un buen entorno
+          de equipo o en entornos más solitarios.
+        </p>
+        <ul class="skills">
+          <li>HTML &amp; CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>Angular &amp; SpringBoot</li>
+          <li>React &amp; Python</li>
+          <li>Bootstrap</li>
+          <li>MySQL • PostgreSQL • SQLite</li>
+          <li>GitHub • Linux • APIs • REST • Scrum • Ágil</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="TradeTail.png" alt="Proyecto 1 screenshot" />
+            <div class="project-content">
+              <h3>TRADETAIL</h3>
+              <p class="project-desc">
+                “TradeTail” es una app que ayuda a las tiendas locales a atraer
+                más clientes del barrio y alrededores, dándoles visibilidad
+                digital y conexión con su comunidad. (En desarrollo)
+              </p>
+              <p class="project-tech">Ionic Angular • SpringBoot • MySql</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/JaimeJimenez03/TradeTail.git"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn primary"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="plan-go.png" alt="Proyecto 2 screenshot" />
+            <div class="project-content">
+              <h3>PLAN & GO</h3>
+              <p class="project-desc">
+                Proyecto en desarrollo, mejorando en todos los sentidos "Ocio en
+                Vivo".
+              </p>
+              <p class="project-tech">Angular • SpringBoot • MySql</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/JaimeJimenez03/Plan-Go"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn primary"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="Ocio.png" alt="Proyecto 3 screenshot" />
+            <div class="project-content">
+              <h3>Ocio En Vivo</h3>
+              <p class="project-desc">
+                Webapp para crear, organizar y participar en actividades de ocio
+                de todo tipo. (Proyecto Integrado)
+              </p>
+              <p class="project-tech">Angular • SpringBoot • MariaDB</p>
+              <div class="project-links">
+                <a
+                  href="https://github.com/JaimeJimenez03/proyecto-jaime"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn primary"
+                  >Código</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <h2>Contacto</h2>
+        <div class="contact-form">
+          <label>
+            <p>jaimejimenezpersonal03@gmail.com</p>
+            <p>604253231</p>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Jaime.
+          <a
+            href="https://github.com/JaimeJimenez03"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <style>
+      :root {
+        --bg: #0f1720;
+        --muted: #d8dfe9;
+        --accent: #ff416c;
+        --white: #e6eef8;
+        --glass: rgba(255, 255, 255, 0.04);
+        --container-width: 1100px;
+        --radius: 14px;
+        --transition: 250ms ease;
+        font-size: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(180deg, #14475f 0%, #071526 100%);
+        color: var(--white);
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+      }
+
+      .container {
+        width: calc(100% - 2rem);
+        max-width: var(--container-width);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        background: rgba(15, 23, 32, 0.65);
+        backdrop-filter: blur(12px);
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0.75rem 0;
+      }
+      .site-header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        font-weight: 700;
+        color: var(--white);
+        text-decoration: none;
+        font-size: 1.15rem;
+      }
+      .nav a {
+        color: var(--muted);
+        text-decoration: none;
+        margin-left: 1.15rem;
+        font-size: 0.95rem;
+        position: relative;
+      }
+      .nav a::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        left: 0;
+        bottom: -4px;
+        background: var(--accent);
+        transition: width 0.3s ease;
+      }
+      .nav a:hover::after {
+        width: 100%;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 240px;
+        gap: 2rem;
+        align-items: center;
+        padding: 3.25rem 0;
+      }
+      .hero-left h1 {
+        font-size: clamp(1.8rem, 3vw, 2.6rem);
+        margin-bottom: 0.6rem;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #ff416c, #ff4b2b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .lead {
+        color: var(--muted);
+        margin-bottom: 0.6rem;
+      }
+      .avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 2.2rem;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 65, 108, 0.2),
+          rgba(255, 75, 43, 0.15)
+        );
+        color: var(--white);
+        box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+      .btn.primary {
+        background: linear-gradient(90deg, #ff416c, #ff4b2b);
+        color: white;
+        box-shadow: 0 4px 20px rgba(255, 75, 43, 0.4);
+      }
+      .btn.primary:hover {
+        transform: scale(1.05);
+      }
+      .btn.outline {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: var(--white);
+        background: transparent;
+      }
+
+      .actions {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+      }
+
+      .about {
+        padding: 2rem 0;
+      }
+      .about h2 {
+        margin-bottom: 0.6rem;
+      }
+      .about p {
+        color: var(--muted);
+        margin-bottom: 0.8rem;
+        max-width: 70ch;
+      }
+      .skills {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 0.6rem;
+      }
+      .skills li {
+        background: linear-gradient(
+          135deg,
+          rgba(255, 65, 108, 0.15),
+          rgba(255, 75, 43, 0.1)
+        );
+        padding: 0.4rem 0.7rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        color: var(--white);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: transform 0.2s ease;
+      }
+      .skills li:hover {
+        transform: scale(1.05);
+      }
+
+      .projects {
+        padding: 1.5rem 0;
+      }
+      .projects h2 {
+        margin-bottom: 0.8rem;
+      }
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.15rem;
+      }
+      .project-card {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        overflow: hidden;
+        border-radius: 16px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.4s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 18px 48px rgba(2, 6, 23, 0.55);
+      }
+      .project-card img {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        transition: transform 0.4s ease;
+      }
+      .project-card:hover img {
+        transform: scale(1.05);
+      }
+      .project-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 1rem;
+      }
+
+      .project-content h3 {
+        margin-bottom: 0.35rem;
+      }
+      .project-desc {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-bottom: 0.6rem;
+      }
+      .project-tech {
+        font-size: 0.85rem;
+        color: #a9ff09ab;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        text-align: end;
+      }
+      .project-links {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .contact {
+        margin-top: 15px;
+        padding: 1.5rem 0;
+      }
+
+      .contact h2 {
+        margin-bottom: 1rem;
+      }
+      .contact p {
+        color: var(--muted);
+        margin-bottom: 0.8rem;
+        margin-left: 2rem;
+      }
+
+      .site-footer {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 1rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 0.9rem;
+      }
+      .site-footer a {
+        color: #ff4b2b;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+      .site-footer a:hover {
+        opacity: 0.7;
+      }
+
+      @media (max-width: 980px) {
+        .projects-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .hero {
+          grid-template-columns: 1fr 160px;
+        }
+        .avatar {
+          width: 140px;
+          height: 140px;
+          border-radius: 12px;
+        }
+      }
+      @media (max-width: 680px) {
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero {
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+        .hero-right {
+          order: 2;
+        }
+        .hero-left {
+          order: 1;
+        }
+        .nav {
+          display: none;
+        }
+      }
+    </style>
+  </body>
+</html>
