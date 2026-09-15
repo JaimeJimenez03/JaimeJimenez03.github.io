@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaime Jiménez — Programador Full Stack</title>
+  <meta name="description" content="Portafolio de Jaime Jiménez, programador full stack. Proyectos, experiencia y contacto.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#inicio">JJ<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#sobre-mi">Sobre mí</a></li>
+          <li><a class="nav__link" href="#stack">Stack</a></li>
+          <li><a class="nav__link" href="#proyectos">Proyectos</a></li>
+          <li><a class="nav__link" href="#trayectoria">Trayectoria</a></li>
+          <li><a class="nav__link" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Cambiar tema">
+          <span aria-hidden="true" data-theme-icon>◐</span>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero section" id="inicio">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">Sevilla, España</p>
+        <h1 class="hero__title reveal">
+          Hola, soy <span class="text-accent">Jaime Jiménez</span><br>
+          programador <span class="text-accent">full stack</span>.
+        </h1>
+        <p class="hero__text reveal">
+          Desarrollo aplicaciones web y móviles de principio a fin: del interfaz al backend
+          y la base de datos. Ahora mismo construyo <strong>AuterVix</strong>, un SaaS de
+          gestión para talleres mecánicos hecho con React y Spring Boot.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="https://demo.autervix.com" target="_blank" rel="noopener">Probar AuterVix ↗</a>
+          <a class="btn btn--ghost" href="assets/cv/CV-Jaime-Jimenez-2026.pdf" target="_blank" rel="noopener">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <p class="section__eyebrow reveal">01 — Perfil</p>
+        <h2 class="section__title reveal">Sobre mí</h2>
+
+        <div class="about reveal">
+          <div class="about__text">
+            <p>
+              Soy técnico en <strong>Desarrollo de Aplicaciones Web</strong> y este curso
+              empiezo <strong>Desarrollo de Aplicaciones Multiplataforma</strong>. Me muevo
+              con soltura tanto en el frontend (HTML, CSS, JavaScript, React, Angular) como
+              en el backend (Java con Spring Boot, Python con Django) y bases de datos SQL.
+            </p>
+            <p>
+              Mi proyecto más grande es <strong>AuterVix</strong>, un SaaS multi-taller para
+              gestionar un taller mecánico entero —clientes, vehículos, órdenes de trabajo,
+              facturación e inventario—. Es un proyecto propio: lo he desarrollado,
+              desplegado en un servidor en la nube con dominio propio y lo mantengo yo.
+            </p>
+            <p>
+              Antes trabajé como desarrollador full stack en un proyecto de
+              <strong>luminarias y contenedores inteligentes</strong>: los dispositivos
+              envían su información a una base de datos y esos datos se gestionan desde
+              una web privada.
+            </p>
+            <p>
+              Soy exigente y perfeccionista con lo que hago, tengo ganas de aprender
+              tecnologías nuevas y disfruto del trabajo en equipo, aunque también me
+              defiendo bien en entornos más autónomos.
+            </p>
+          </div>
+
+          <ul class="about__facts">
+            <li><span class="fact__label">Ubicación</span><span class="fact__value">Sevilla, España</span></li>
+            <li><span class="fact__label">Perfil</span><span class="fact__value">Full stack</span></li>
+            <li><span class="fact__label">Idiomas</span><span class="fact__value">Español</span></li>
+            <li><span class="fact__label">Disponibilidad</span><span class="fact__value">Abierto a ofertas</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="section section--alt" id="stack">
+      <div class="container">
+        <p class="section__eyebrow reveal">02 — Tecnologías</p>
+        <h2 class="section__title reveal">Stack</h2>
+
+        <div class="grid grid--3" id="stack-grid">
+          <!-- Renderizado desde js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <p class="section__eyebrow reveal">03 — Trabajo</p>
+        <h2 class="section__title reveal">Proyectos</h2>
+        <p class="section__intro reveal">
+          Una selección de proyectos personales y profesionales.
+        </p>
+
+        <div class="filters reveal" id="filtros" role="group" aria-label="Filtrar proyectos">
+          <!-- Renderizado desde js/main.js -->
+        </div>
+
+        <div class="grid grid--3" id="proyectos-grid" aria-live="polite">
+          <!-- Renderizado desde js/data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRAYECTORIA ============ -->
+    <section class="section section--alt" id="trayectoria">
+      <div class="container">
+        <p class="section__eyebrow reveal">04 — Recorrido</p>
+        <h2 class="section__title reveal">Trayectoria</h2>
+
+        <ol class="timeline" id="timeline">
+          <!-- Renderizado desde js/data.js -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <p class="section__eyebrow reveal">05 — Hablemos</p>
+        <h2 class="section__title reveal">Contacto</h2>
+        <p class="section__intro reveal">
+          ¿Tienes un proyecto o una oferta? Escríbeme y te respondo lo antes posible.
+        </p>
+
+        <div class="contact reveal">
+          <a class="contact__card" href="mailto:jaimejimenezpersonal03@gmail.com">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">jaimejimenezpersonal03@gmail.com</span>
+          </a>
+          <a class="contact__card" href="https://github.com/jaimejimenez03" target="_blank" rel="noopener">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">JaimeJimenez03</span>
+          </a>
+          <a class="contact__card" href="https://www.linkedin.com/in/jaime-jim%C3%A9nez-machuca-82678b312/" target="_blank" rel="noopener">
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">Jaime Jiménez Machuca</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="year"></span> Jaime Jiménez</p>
+      <a href="#inicio" class="footer__top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
