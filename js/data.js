@@ -7,14 +7,16 @@
 /* ---------- Tecnologías ---------- */
 const STACK = [
   {
-    titulo: 'Frontend',
-    descripcion: 'Interfaces web y móviles, responsive y accesibles.',
-    tecnologias: ['HTML', 'CSS', 'JavaScript', 'React', 'React Router', 'Vite', 'Angular', 'Ionic', 'React Native']
+    titulo: 'Frontend y aplicaciones',
+    descripcion: 'Interfaces web, móviles y de escritorio.',
+    tecnologias: ['HTML', 'CSS', 'JavaScript', 'React', 'React Router', 'Vite', 'Angular',
+                  'Ionic', 'React Native', 'Kotlin', 'Android', 'PySide6']
   },
   {
     titulo: 'Backend',
-    descripcion: 'APIs REST, autenticación y lógica de negocio.',
-    tecnologias: ['Java', 'Spring Boot', 'Spring Security', 'Python', 'Django']
+    descripcion: 'APIs REST, autenticación, lógica de negocio y concurrencia.',
+    tecnologias: ['Java', 'Spring Boot', 'Spring Security', 'Python', 'Django',
+                  'Programación de procesos']
   },
   {
     titulo: 'Datos y despliegue',
